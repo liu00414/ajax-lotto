@@ -10,7 +10,7 @@ function generateNumbers(ev) {
     ev.preventDefault();
     let flag = false;
     console.log('click generate numbers');
-//    let req = new Request('https://griffis.edumedia.ca/mad9014/lotto/nums.php');
+    //    let req = new Request('https://griffis.edumedia.ca/mad9014/lotto/nums.php');
     let req = new Request('https://liu00414.github.io/ajax-lotto/nums.php');
     let myData = new FormData();
     let digits = document.getElementById('digits').value;
@@ -20,7 +20,7 @@ function generateNumbers(ev) {
     myData.append('digits', digits);
     let opts = {
         method: 'POST',
-//        mode: 'cors',
+        mode: 'same-origin',
         body: myData,
 
     };
@@ -102,12 +102,3 @@ function changeToTab1(ev) {
     document.querySelector('.num_list').innerHTML = '';
     document.querySelector('#message').innerHTML = '';
 }
-
-
-
-
-
-
-
-
-
