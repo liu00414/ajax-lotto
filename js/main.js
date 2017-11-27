@@ -20,7 +20,7 @@ function generateNumbers(ev) {
     myData.append('digits', digits);
     let opts = {
         method: 'POST',
-        mode: 'same-origin',
+        mode: 'CORS',
         body: myData,
 
     };
