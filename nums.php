@@ -1,9 +1,9 @@
 <?php
-header("Access-Control-Allow-Origin: *");
 error_reporting(E_ALL);
 
 function respond($data, $code, $msg) {
     header("Content-type: application/json");
+    header("Access-Control-Allow-Origin: *");
 	echo '{"code":' . $code . ',"message":"'. $msg .'", "numbers":';
     echo json_encode($data);
 	echo '}';
