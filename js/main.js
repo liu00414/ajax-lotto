@@ -11,7 +11,7 @@ function generateNumbers(ev) {
     let flag = false;
     console.log('click generate numbers');
 //    let req = new Request('https://griffis.edumedia.ca/mad9014/lotto/nums.php');
-    let req = new Request('../nums.php');
+    let req = new Request('https://liu00414.github.io/ajax-lotto/nums.php');
     let myData = new FormData();
     let digits = document.getElementById('digits').value;
     let max = document.getElementById('max').value;
