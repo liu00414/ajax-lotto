@@ -19,9 +19,9 @@ function generateNumbers(ev) {
     myData.append('max', max);
     myData.append('digits', digits);
     let opts = {
-//        method: 'POST',
+        method: 'POST',
 //        mode: 'cors',
-//        body: myData,
+        body: myData,
 
     };
     fetch(req, opts)
