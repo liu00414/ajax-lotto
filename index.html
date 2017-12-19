@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJAX Lotto</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="javascript" href="ja/main.js" />
 </head>
+<header class="left-header">
+            <h1>Lotto Numbers Generator</h1>
+        </header>
 <body>
     <div id="home" class="page active">
         <header>
             <h1>Lotto Numbers</h1>
         </header>
-        <section class="main screen1">
+        <section class="main">
+           <p class="input-message">Input number of digits and range you want:</p>
             <p class="formBox">
                 <label for="digits">Number of Digits</label>
-                <input id="digits" type="number" max="10" min="1" placeholder="0" class="sm"/>
+                <input id="digits" type="number" max="10" min="1" placeholder="0" class="sm" />
             </p>
             <p class="formBox">
                 <label for="max">Range</label>
@@ -25,20 +28,24 @@
             </p>
         </section>
     </div>
-    <div id="list" class="page displaynone">
+    <div id="list" class="page">
         <header>
             <h1>Lotto Numbers</h1>
         </header>
-        <section class="main screen2">
+        <section class="main">
            <p id="message"></p>
             <ul class="num_list">
                 <!-- display the generated numbers from the server -->
             </ul>
-            <p>
+            <div>
                 <button id="btnBack">Start Again</button>
-            </p>
+            </div>
         </section>
     </div>
+    <footer>
+        <p>&copy;
+            <time datetime="2017">2017</time> Le Liu</p>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
